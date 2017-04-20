@@ -1,0 +1,25 @@
+{
+  "name": "anglianviews",
+  "description": "website",
+  "main": "index.js",
+  "authors": [
+    "paul steward"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "dads"
+  ],
+  "homepage": "https://github.com/Jpsteward/anglianviews",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
