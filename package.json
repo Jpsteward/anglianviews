@@ -1,0 +1,22 @@
+{
+  "name": "anglianviews",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jpsteward/anglianviews.git"
+  },
+  "keywords": [
+    "dads"
+  ],
+  "author": "paul steward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jpsteward/anglianviews/issues"
+  },
+  "homepage": "https://github.com/Jpsteward/anglianviews#readme"
+}
