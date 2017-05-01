@@ -9,6 +9,7 @@ This website is designed to showcase photos taken by the client and sell online 
 This website consists of a Home page, three pages of products, a contact page with an order app.
 
 ## Resources
+The HTML has been checke by validator.w3.org
 
 ### Wireframe
 I have used MyBalsamiq wireframe to design the website.
