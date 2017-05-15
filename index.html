@@ -11,34 +11,69 @@
 	      <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	     </head>
-       <body>       
+       <body>
+       <!--top order page button -->
           <div class="container">
            <div class="row">
-              <div class="col-xs">
-                 <H1>Welcome to Anglian Views</H1>
-              </div>
-              
-           </div>
+            <a href="#" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
+           </div><br>
+           <!-- Top Nav elements not used on small screens -->
            <div class="row">
-             <div class="col-xs">
-                <img src="images/animals/Demoiselle16-06a.jpg" alt="image" class="img-thumbnail">           
+             <nav class="nav navbar-nav navbar-right hidden-xs ">
+                <a class="navbar-brand" href="">Animals</a>
+                <a class="navbar-brand" href="">Flora and Fauna</a>
+                <a class="navbar-brand" href="landscapes.html">Landscapes</a>
+                <a class="navbar-brand" href="">Contacts</a>
+              </nav>
+              <!-- page title left on larger screens. middle on small screens -->
+           <div class="row">
+              <div class="col-lg-6 col-xs-offset-2">
+                 <H1>Welcome to Anglian Views</H1>
+              </div>              
+           </div>
+           <!-- images -->
+           <div class="row">
+             <div class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-10 ">
+               <img src="images/animals/Demoiselle16-06a.jpg" alt="image">  
              </div> 
-             <div class="col-xs">
-                <a href="">Animals</a><br>
+            </div>
+            <div class="row">
+            <div class="col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9">
+             <img class="" src="images/animals/Demoiselle16-06a.jpg" alt="image">
+             <img class="" src="images/animals/Demoiselle16-06a.jpg" alt="image">
+             <img class="" src="images/animals/Demoiselle16-06a.jpg" alt="image">             
+             </div>
+             </div>
+             <!-- order button and scroll -->          
+            <div class="row">
+            <br> 
+               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9 glyphicon glyphicon-chevron-left"></a>
+               <a class="btn btn-success bt-sm col-xs-">Add to Order</a>        
+               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right"></a>
+            </div>
+            <!-- small screen nav elements -->
+            <div class="row">
+             <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
+             <br>
+                <a href="">Home</a><br>
                 <a href="">Flora and Fauna</a><br>
                 <a href="">Landscapes</a><br>
                 <a href="">Contacts</a><br>
               </div>
-              <br>
-               <div class="col-xs">
-               	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-               	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-               	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-               	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-               	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-               	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>  
-        	  </div>
+             </div>
+             <!-- page text -->
+             <div class="row">
+               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
+               <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+               </div>
            </div>
-       </body>
+          </div> 
+         </div> 
+      </body>
    </html>
