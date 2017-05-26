@@ -1,5 +1,13 @@
 
+ .body {
+ 	background-color: #fff;
+ }
+ .main{
+	height: 25px;
+	width: 25px;
+}
 
-body {
-	background-color:#ffffff;
+.tab{
+	height: 25px;
+	width: 25px;
 }
