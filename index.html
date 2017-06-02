@@ -18,6 +18,9 @@
           #car2{
                 margin-right: 50px;
               }
+          body{
+            background-color: black;
+          }
         </style>       
 	     </head>
        <body>
@@ -52,7 +55,8 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                </div>`
            </div>
-           <!-- images -->
+           
+           <!-- carousel -->
            <div class="row" class="carousel slide" data-ride="carousel">
              <div class="col-xs-offset-0 col-sm-offset-9 col-md-offset-10 col-lg-offset-6" class="carousel-inner" role="listbox">
                <div class="carousel-item active">
@@ -63,6 +67,7 @@
                </div>
              </div> 
             </div>
+            <!-- images -->
             <div class="row">
             <div class="col-xs-offset-4 col-sm-offset-8 col-md-offset-9 col-lg-offset-9">
              <img class="tab" class="car2" src="images/animals/Demoiselle16-06a.jpg" alt="image">
@@ -92,6 +97,7 @@
          <script type="text/javascript" src="bower_components/angular/angular.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
         <script type="text/javascript">
+        // carousel  
         $('.carousel').carousel({
           interval: 2000
         })

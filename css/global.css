@@ -1,17 +1,12 @@
 
- body {
- 	background-color: #fff;
- }
- .main{
-	height: 250px;
-	width: 250px;
-}
-
-.tab{
-	height: 50px;
-	width: 50px;
-}
-
-#car1{
-	padding: 10px;
-}
+.main{
+      height: 450px;
+      width: 600px;
+      margin-bottom: 50px;
+      }          
+#car2{
+      margin-right: 50px;
+      }
+body{
+     background-color: black;
+     }
