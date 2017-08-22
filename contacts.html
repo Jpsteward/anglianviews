@@ -1,106 +1,117 @@
-
-
- <div class="row">
-             <div class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6">  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
    <html>
       <head>
 	     <title>Anglian Views</title>
 	      <meta name="viewport" content="width=device-width, initial-scale=1">
-	      <base href="/">
+	      <base href="/">        
 	      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">    
-	     
+	     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+       <style type="text/css">
+          .theme {
+            color: #fff;
+          }
+
+          body {
+            background-color: #222;
+          }
+        </style>
        </head>
       <body>
           <div class="container">
+           
+           
+
+            <!--top order page button -->
+          <div class="container">
            <div class="row">
-            <a href="#" class="btn btn-success bt-sm">Go To Order</a>
+            <a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-10">Go To Order Page</a>
+           </div><br>
            </div>
+
+
+            <!-- Top Nav elements not used on small screens -->
            <div class="row">
-              <div class="col-xs">
-                 <H1>Contact</H1>
+             <nav class="nav navbar-nav navbar-right hidden-xs ">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="animals.html">Animals</a>
+                <a class="navbar-brand" href="flora.html">Flora and Fauna</a>
+                <a class="navbar-brand" href="landscapes.html">Landscapes</a>
+                
+              </nav>
+             </div>
+             <div class="row">
+              <div class="col-xs col-lg-offset-1">
+                 <H1 class="theme">Contact Details</H1>
               </div>              
            </div>
-           <div class="row">
-             <div class="col-xs">
-                
-             </div> 
-            </div>
+
+           <!-- Form -->
+             <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-offset-7 col-lg-5">
+              <div id="orderForm">
+               <br>
+               <form role="form">
+                <div class="form-group">
+                  <label class="theme" for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                 </div>
+                 <div class="form-group">
+                  <label class="theme" for="surname">Surname</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="Surname">
+                 </div>
+                 <div class="form-group">
+                  <label class="theme" for="address">Home Address</label>
+                  <input type="text" class="form-control" id="address" placeholder="Address Line 1">
+                 </div>
+                 <div class="form-group">
+                  <label class="theme" for="address"></label>
+                  <input type="text" class="form-control" id="address" placeholder="Address Line 2">
+                 </div>
+                 <div class="form-group">
+                  <label class="theme" for="address"></label>
+                  <input type="text" class="form-control" id="address" placeholder="Postcode">
+                 </div>
+                 <div class="form-group">
+                   <label class="theme" for="phone">Phone Number</label>
+                   <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                 </div>
+                 <div class="form-group">
+                   <label class="theme" for="email">Email Address</label>
+                   <input type="text" class="form-control" id="email" placeholder="Email Address">
+                 </div>
+                 <div class="radio">
+                   <label>
+                     <input type="radio" name="optionsRadio" id="optionsRadio1" value="option1" checked>
+                     Option One is this
+                   </label>               
+                 </div>
+                 <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionRadio2" value="option2">
+                    option two is this
+                  </label>
+                  </div>
+                  <div class="form-group">
+                   <button type="submit" class="btn btn-default">Place Order</button>
+                  </div> 
+               </form> 
+               </div>     
+             </div>
+          <!-- small screen nav elements -->
             <div class="row">
-             <div class="col-xs">
-                <a href="index.html">Home</a><br>
+             <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
+             <br>
                 <a href="animals.html">Animals</a><br>
                 <a href="flora.html">Flora and Fauna</a><br>
                 <a href="landscapes.html">Landscapes</a><br>
-                
+                <a href="contacts.html">Contacts</a><br>
               </div>
-             </div>
-             <div class="row">
-               <div class="col-xs">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>         
-           </div>
-          </div>      
-
- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/flora/spring/5K6A4449.jpg" alt="test">
-    </div>
-
-    <div class="item">
-      <img src="images/animals/Teal 18-02-17b.jpg" alt="test 2">
-    </div>
-
-    <div class="item">
-      <img src="images/flora/summer/Poppies 13-06c.jpg" alt="test 3">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>  
+             </div>          
 
 
-        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  
+
+
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>       
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
