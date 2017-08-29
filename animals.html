@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-   <html lang="en">
+   <html lang="en" ng-app='animalsPage' ng-controller='imageController'>
       <head>
       <meta charset="utf-8">
 	     <title>Anglian Views</title>
@@ -17,13 +17,14 @@
 
           .tab {
                 height:100px;
-                width:100px;                
+                width:100px; 
+                padding: 5px;               
               }
           .theme{
             color:white;
           }    
           body{
-            background-color: black;
+            background-color: #222;
           }
         </style>     
        </head>
@@ -31,8 +32,11 @@
        <!--top order page button -->
           <div class="container">
            <div class="row">
-           	<a href="#" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
-           </div><br>
+           	<a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
+           </div>
+          </div><br>
+
+
            <!-- Top Nav elements not used on small screens -->
            <div class="row">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
@@ -41,45 +45,57 @@
                 <a class="navbar-brand" href="landscapes.html">Landscapes</a>
                 <a class="navbar-brand" href="contacts.html">Contacts</a>
               </nav>
+
+
               <!-- page title left on larger screens. middle on small screens -->
            <div class="row">
               <div class="col-lg-4 col-xs-offset-2">
                  <H1 class="theme">Animals</H1>
               </div>              
            </div>
+
+
            <!-- page text -->
              <div class="row">
-               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-offset-0 col-lg-5">
+               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5  col-lg-5">
                <br>
-               <div class="theme">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-               </div>
-              </div> 
+                   <div class="theme">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div>
+               </div>    
+
+
            <!-- images -->
            <div class="row">
              <div  class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6 ">
-               <img class="main" src="images/animals/Demoiselle 16-06b.jpg" alt="image">  
+               <img class="main img-rounded" src="images/animals/Demoiselle 16-06b.jpg" alt="image">  
              </div> 
             </div>
             <div class="row">
             <div class="col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-7">
-             <img class="tab" src="images/animals/Swan 17-06E.jpg" alt="image">
-             <img class="tab" src="images/animals/Dunnock 30-03-17a.jpg" alt="image">
-             <img class="tab" src="images/animals/Grey Lag 16-03-17b.jpg" alt="image">            	
+             <img class="tab img-rounded" src="images/animals/Swan 17-06E.jpg" alt="image">
+             <img class="tab img-rounded" src="images/animals/Dunnock 30-03-17a.jpg" alt="image">
+             <img class="tab img-rounded" src="images/animals/Grey Lag 16-03-17b.jpg" alt="image">            	
              </div>
              </div>
+
+
+
              <!-- order button and scroll -->          
             <div class="row">
             <br> 
-               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-8 glyphicon glyphicon-chevron-left"></a>
-               <a class="btn btn-success bt-sm col-xs-">Add to Order</a>       	
-               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right"></a>
+               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-7 glyphicon glyphicon-chevron-left" ng-click='toggleImgLeft'></a>
+               <a class="btn btn-success bt-sm col-xs-" ng-click='addOrder'>Add to Order</a>       	
+               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" ng-click='toggleImgRight'></a>
             </div>
+
+
+
             <!-- small screen nav elements -->
             <div class="row">
              <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
@@ -92,8 +108,13 @@
              </div>            
            </div>
           </div> 
-         </div> 
-         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+          <script type="text/javascript" src="bower_components/angular/angular.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+        <script>
+          angular.module('animalsPage' [])
+
+
+
+        </script>
       </body>
   </html>
