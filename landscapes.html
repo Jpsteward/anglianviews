@@ -5,7 +5,14 @@
        <title>Anglian Views</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/">
-        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">    
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"> 
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+          $("#leftClick").click(function(){
+                $("#pic1").hide();
+              }); 
+
+
+        </script>
         <style type="text/css">
 
         .main{
@@ -16,13 +23,14 @@
 
           .tab {
                 height:100px;
-                width:100px;                
+                width:100px;
+                padding: 5px;                
               }
           .theme {
             color:white;
           }    
           body{
-            background-color: black;
+            background-color:#222;
           }
         </style>    
        </head>
@@ -30,14 +38,14 @@
        <!--top order page button -->
           <div class="container">
            <div class="row">
-            <a href="#" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
+            <a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
            </div><br>
            <!-- Top Nav elements not used on small screens -->
            <div class="row">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="animals.html">Animals</a>
-                <a class="navbar-brand" href="landscapes.html">Flora and Fauna</a>
+                <a class="navbar-brand" href="flora.html">Flora and Fauna</a>
                 <a class="navbar-brand" href="contacts.html">Contacts</a>
               </nav>
               <!-- page title left on larger screens. middle on small screens -->
@@ -61,23 +69,24 @@
               </div>
            <!-- images -->
             <div class="row">
-             <div class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6 ">
-               <img class="main" src="images/landscapes/5K6A3497.jpg" alt="image">  
+             <div id="pic1" class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6 ">
+               <img class="main img-rounded" src="images/landscapes/5K6A3497.jpg" alt="image">  
+                
              </div> 
             </div>
             <div class="row">
             <div class="col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-8">
-             <img class="tab" src="images/landscapes/Brancaster 25-5aa.jpg" alt="image">
-             <img class="tab" src="images/landscapes/5K6A3424.jpg" alt="image">
-             <img class="tab" src="images/landscapes/5K6A3018.jpg" alt="image">             
+             <img class="tab img-rounded" src="images/landscapes/Brancaster 25-5aa.jpg" alt="image">
+             <img class="tab img-rounded" src="images/landscapes/5K6A3424.jpg" alt="image">
+             <img class="tab img-rounded" src="images/landscapes/5K6A3018.jpg" alt="image">             
              </div>
              </div>
              <!-- order button and scroll -->          
-            <div class="row">
+            <div class="row">          
             <br> 
-               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9 glyphicon glyphicon-chevron-left"></a>
-               <a class="btn btn-success bt-sm col-xs-">Add to Order</a>        
-               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right"></a>
+               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9 glyphicon glyphicon-chevron-left" onclick="leftClick()"></a>
+               <a class="btn btn-success bt-sm col-xs-" onclick="">Add to Order</a>        
+               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="rightClick()"></a>
             </div>
             <!-- small screen nav elements -->
             <div class="row">
@@ -93,7 +102,13 @@
            </div>
           </div> 
          </div> 
-         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+         <script type="text/javascript">
+          
+
+             function rightClick() {
+              alert('This works')
+             }
+         </script>
+         
       </body>
   </html>
