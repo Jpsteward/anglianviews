@@ -1,119 +1,110 @@
 <!DOCTYPE html>
-    <html lang="en">
-       <head>
+<html lang="en">
+
+<head>
         <meta charset="utf-8">
-	      <title>Anglian Views</title>
-	      <!-- linked to angularjs with Bootstrap used -->
-	      <meta name="viewport" content="width=device-width, initial-scale=1">
-	      <base href="/">
-	      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/css">	 
+        <title>Anglian Views</title>
+        <!-- linked to angularjs with Bootstrap used -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/css">
         <style type="text/css">
+        .main {
+                height: 450px;
+                width: 600px;
+                margin-bottom: 50px;
+        }
 
-        .main{
-          height: 450px;
-          width: 600px;
-          margin-bottom: 50px;
-           }  
-
-          .tab {
-                height:100px;
-                width:100px;                
+        .tab {
+                height: 100px;
+                width: 100px;
                 padding: 5px;
-              }
-          .theme{
-            color:white;
-          }           
-          body{
-            background-color: #222;
-          }
-        </style>       
-	     </head>
-       <body>
-       <!--top order page button -->
-          <div class="container">
-           <div class="row">
-            <a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
-           </div><br>
-           <!-- Top Nav elements not used on small screens -->
-           <div class="row">
-             <nav class="nav navbar-nav navbar-right hidden-xs ">
-                <a class="navbar-brand" href="animals.html">Animals</a>
-                <a class="navbar-brand" href="flora.html">Flora and Fauna</a>
-                <a class="navbar-brand" href="landscapes.html">Landscapes</a>
-                <a class="navbar-brand" href="contacts.html">Contacts</a>
-              </nav>
-              <!-- page title left on larger screens. middle on small screens -->
-           <div class="row">
-              <div class="col-xs-offset-2 col-lg-6 col-lg-offset-0">
-                 <H1 Class="theme">Welcome to Anglian Views</H1>
-              </div>              
-           </div>
-           <!-- page text -->
-             <div class="row">
-               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-offset-0 col-lg-5">
-               <br>
-                 <div class="theme">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        }
+
+        .theme {
+                color: white;
+        }
+
+        body {
+                background-color: #222;
+        }
+
+        </style>
+</head>
+
+<body>
+        <!-- container to wrap everything is a good idea - not necessary though -->
+        <div class="container">
+                <!--top order page button -->
+                <div class="row">
+                        <div class="col-md-12 text-right">
+                                <a href="contacts.html" class="btn btn-success bt-sm">Go To Order Page</a>
+                        </div>
                 </div>
-               </div>              
-           <!-- images -->
-             <!-- carousel -->
-         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-             <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                     <li data-target="#myCarousel" data-slide-to="1"></li>
-                     <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
+                <!-- Navigation row -->
+                <div class="row">
+                        <div id="loadNav" class="col-md-12 text-right">
+                        </div>
+                </div>
+                <!-- Top Nav elements not used on small screens -->
+                <!-- This next row must contain two columns left: for title and text - right: for carousel -->
+                <div class="row">
+                        <div class="col-md-6">
+                                <H1 Class="theme">Welcome to Anglian Views</H1>
+                                <p class="theme">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="col-md-6">
+                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        
+                                                
+                                        <div class="carousel-inner">
+                                                <div class="item active">
+                                                        <img class="main img-rounded" src="images/flora/spring/Bluebells 17a.jpg" alt="image">
+                                                </div>
+                                                <div class="item">
+                                                        <img class="main img-rounded" src="images/animals/Teal 18-02-17b.jpg" alt="test 2">
+                                                </div>
+                                                <div class="item">
+                                                        <img class="main img-rounded" src="images/flora/summer/Poppies 13-06c.jpg" alt="test 3">
+                                                </div>
+                                        </div>
 
-
-           <!-- Wrapper for slides -->
-           <div class="row">
-             <div class="col-xs-offset- col-sm-offset-9 col-md-offset-10 col-lg-offset-6"> 
-         <div class="carousel-inner">
-          <div class="item active">
-                 
-               <img class="main img-rounded"  src="images/flora/spring/Bluebells 17a.jpg" alt="image">  
-             </div>
-
-             <div class="item">
-              <img class="main img-rounded" src="images/animals/Teal 18-02-17b.jpg" alt="test 2">
-             </div>
-
-              <div class="item">
-               <img class="main img-rounded" src="images/flora/summer/Poppies 13-06c.jpg" alt="test 3">
-              </div>
-           </div>
-           </div>           
-         </div>  
-         </div>              
-             
-            <!-- small screen nav elements -->
-            <div class="row">
-             <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
-             <br>
-                <a href="animals.html">Animals</a><br>
-                <a href="flora.html">Flora and Fauna</a><br>
-                <a href="landscapes.html">Landscapes</a><br>
-                <a href="contacts.html">Contacts</a><br>
-              </div>
-             </div>             
-          </div> 
-         </div> 
+                                        <a onclick="doPrevious()">Previous
+                                        </a>
+                                        <a onclick="doNext()">Next
+                                        </a>
+                                
+                                </div>
+                        </div>
+                </div>
+                
         </div>
         </div>
-         <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+        </div>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
         <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
         <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.js"></script>
-      
-          
-      </body>
-   </html>
+        <script>
+        function doNext(){
+          $("#myCarousel").carousel('next');
+        }
+        function doPrevious(){
+          $("#myCarousel").carousel('prev');
+        }
+        $(function(){
+          $("#loadNav").load("nav.html"); 
+        });
+        </script>
+</body>
+
+</html>
