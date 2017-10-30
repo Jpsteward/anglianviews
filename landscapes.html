@@ -31,59 +31,70 @@
         </style>    
        </head>
        <body>
-       <!--top order page button -->
+       <!--top order page button row 1-->
           <div class="container">
-           <div class="row">
-            <a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
+           <div class="row col-md-12 text-right">
+            <a href="contacts.html" class="btn btn-success bt-sm">Go To Order Page</a>
            </div><br>
-           <!-- Top Nav elements not used on small screens -->
-           <div class="row">
+           <!-- Top Nav elements not used on small screens row 2-->
+           <div class="row col-md-12 tet-right">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="animals.html">Animals</a>
                 <a class="navbar-brand" href="flora.html">Flora and Fauna</a>
                 <a class="navbar-brand" href="contacts.html">Contacts</a>
               </nav>
-              <!-- page title left on larger screens. middle on small screens -->
-           <div class="row">
-              <div class="col-lg-4 col-xs-offset-2">
-                 <H1 class="theme">Landscapes</H1>
-              </div>              
-           </div>
-           <!-- page text -->
-             <div class="row">
-               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
-               <br>
-                <div class="theme">
+             </div> 
+              <!-- page title left on larger screens. middle on small screens row 3 -->
+           <div class="row col-md-5">              
+                 <H1 class="theme text-center">Landscapes</H1>                
+                              
+              <p class="theme text-center">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-              </div>
+                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                
+              </p>
+            </div>
+            <div class="col-md-1"></div>
            <!-- images -->
-            <div class="row">
-             <div id="pic1" class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6 ">
-               <img class="main img-rounded" src="images/landscapes/5K6A3497.jpg" alt="image">  
-                
-             </div> 
+            <div class="row col-md-6">
+                           <!-- carousel -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+
+                                        <!-- wrapper for slides -->
+             <div class='carousel-inner'>
+               <div class="item active"> 
+                    <img class="main img-rounded" src="images/landscapes/5K6A3497.jpg" alt="image">
+                    <div class="carousel-caption">
+                      image 1
+                    </div>
+                </div>      
+                <div class="item">
+                   <img class="main img-rounded" src="images/animals/Swan 17-06E.jpg" alt="test 2">
+                </div>
+                <div class="item">
+                  <img class="main img-rounded" src="images/animals/Dunnock 30-03-17a.jpg" alt="test 3">
+                </div>           
             </div>
-            <div class="row">
-            <div class="col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-8">
-             <img class="tab img-rounded" src="images/landscapes/Brancaster 25-5aa.jpg" alt="image">
-             <img class="tab img-rounded" src="images/landscapes/5K6A3424.jpg" alt="image">
-             <img class="tab img-rounded" src="images/landscapes/5K6A3018.jpg" alt="image">             
-             </div>
-             </div>
-             <!-- order button and scroll -->          
-            <div class="row">          
+          </div>
+          
+             <!-- order button and scroll row 41-->          
+            <div class="row col-md-10 text-right">          
             <br> 
-               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9 glyphicon glyphicon-chevron-left" onclick="leftClick()"></a>
+               <a class="btn btn-default glyphicon glyphicon-chevron-left" onclick="leftClick()"></a>
                <a class="btn btn-success bt-sm col-xs-" onclick="">Add to Order</a>        
-               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="rightClick()"></a>
+               <a class="btn btn-default glyphicon glyphicon-chevron-right" onclick="rightClick()"></a>
             </div>
+            <div class="col-md-2"></div>
             <!-- small screen nav elements -->
             <div class="row">
              <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
@@ -98,7 +109,7 @@
            </div>
           </div> 
          </div> 
-         <script type="text/javascript">
+         <script>
           
 
              function rightClick() {
