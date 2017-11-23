@@ -67,36 +67,18 @@
            <!-- images -->
            
              <div  class="col-md-6 ">
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        </ol>
-                                        <!-- Wrapper for slides -->                                       
-                                                
-                                        <div class="carousel-inner">
-                                              <div class="item active">
-                                                <img class="main img-rounded" src="images/animals/Demoiselle 16-06b.jpg" alt="image">
-                                              </div>
-                                              <div class="item">
-                                                 <img class="main img-rounded" src="images/animals/Swan 17-06E.jpg" alt="test 2">
-                                              </div>
-                                             <div class="item">
-                                                <img class="main img-rounded" src="images/animals/Dunnock 30-03-17a.jpg" alt="test 3">
-                                            </div>
-                                        </div>                                     
-                                 </div>
+
+              <img id='slider' class = 'main img-rounded' src="images/animals/Demoiselle 16-06b.jpg"/>
+              
              </div>
 
 
 
              <!-- order button and scroll row 4-->          
-            <div class="row col-md-10 text-right" onclick="doPrevious()">                          
+            <div class="row col-md-10 text-right" onclick="prev()">                          
                <a class="btn btn-default glyphicon glyphicon-chevron-left"></a>
                <a class="btn btn-success bt-sm">Add to Order</a>       	
-               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="doNext()"></a>                        
+               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="next()"></a>                        
             </div>
             <div class="row col-md-2"></div>                                                          
 
@@ -117,15 +99,35 @@
           </div> 
           
           <script>
-             function doNext(){
-          $("#myCarousel").carousel('next');
-        }
-        function doPrevious(){
-          $("#myCarousel").carousel('prev');
-        }
-        $(function(){
-          $("#loadNav").load("nav.html"); 
-        });    
+            // array
+         var images =["images/animals/Demoiselle 16-06b.jpg", "images/animals/Swan 17-06E.jpg", "images/animals/Gull 10-06-16e.jpg"];
+         var num = 0;
+         // right click
+         function next() {
+          var slider = 
+          document.getElementById('slider');
+          num++;
+          if(num >= images.length) {
+            num = 0;
+          }
+          slider.src = images[num];
+         }
+         
+         //left click
+         function prev(){
+          var slider =
+          document.getElementById('slider');
+           num--;
+           if(num < 0) {
+            num = images.length -1;
+           }
+           slider.src = images[num];
+         }
           </script>
       </body>
   </html>
+
+
+  
+  
+  
