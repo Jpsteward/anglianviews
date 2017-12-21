@@ -16,71 +16,66 @@
 
           .tab {
                 height:100px;
-                width:100px;                
+                width:100px; 
+                padding: 5px;               
               }
               .theme{
                 color:white;
               }
           body{
-            background-color: black;
+            background-color:#222;
           }
         </style>         
        <body>
-       <!--top order page button -->
+       <!--top order page button row 1 -->
           <div class="container">
-           <div class="row">
-            <a href="#" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-11">Go To Order Page</a>
-           </div><br>
-           <!-- Top Nav elements not used on small screens -->
-           <div class="row">
+             <div class="row col-md-12 text-right">
+               <a href="contacts.html" class="btn btn-success bt-sm">Go To Order Page</a>
+             </div>
+          </div> <br>  
+
+           <!-- Top Nav elements not used on small screens row 2-->
+           <div class="row col-md-12 text-right">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="animals.html">Animals</a>
                 <a class="navbar-brand" href="landscapes.html">Landscapes</a>
                 <a class="navbar-brand" href="contacts.html">Contacts</a>
               </nav>
-              <!-- page title left on larger screens. middle on small screens -->
-           <div class="row">
-              <div class="col-lg-4 col-xs-offset-2">
-                 <H1 class="theme">Flora and Fauna</H1>
-              </div>              
-           </div>
-            <!-- page text -->
-             <div class="row">
-               <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-5">
-               <br>
-                 <div class="theme">
+
+
+              <!-- page title left on larger screens. middle on small screens row 3 -->
+           <div class="row col-md-6">              
+                 <H1 class="theme text-center">Flora and Fauna</H1>   
+                 <!-- page text -->
+                 <p class="theme text-center">
                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-               </div>
-           <!-- images -->
-           <div class="row">
-             <div class="col-xs-offset-5 col-sm-offset-9 col-md-offset-10 col-lg-offset-6 ">
-               <img class="main" src="images/flora/spring/5K6A4145.jpg" alt="image">  
-             </div> 
             </div>
-            <div class="row">
-            <div class="col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-8">
-             <img class="tab" src="images/flora/spring/Bluebells 17a.jpg" alt="image">
-             <img class="tab" src="images/flora/spring/5K6A4321.jpg" alt="image">
-             <img class="tab" src="images/flora/summer/Menocopsis 22-06b.jpg" alt="image">             
+                
+
+           <!-- images -->
+            <div  class="col-md-6 ">
+
+              <img id='slider' class = 'main img-rounded' src="images/flora/spring/5K6A4143.jpg"/>
+              
              </div>
-             </div>
-             <!-- order button and scroll -->          
-            <div class="row">
-            <br> 
-               <a class="btn btn-default col-xs-offset-3 col-sm-offset-8 col-md-offset-9 col-lg-offset-9 glyphicon glyphicon-chevron-left"></a>
+             
+             <!-- order button and scroll  row 4-->          
+            <div class="row col-md-10 text-right">
+               <a class="btn btn-default glyphicon glyphicon-chevron-left"></a>
                <a class="btn btn-success bt-sm col-xs-">Add to Order</a>        
                <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right"></a>
             </div>
+
+
             <!-- small screen nav elements -->
             <div class="row">
-             <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
+             <div class="visible-xs">
              <br>
                 <a href="index.html">Home</a><br>
                 <a href="animals.html">Animals</a><br>
@@ -92,7 +87,34 @@
            </div>
           </div> 
          </div> 
-         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+         <script>
+            // array
+         var images =["images/flora/spring/5K6A4143.jpg", "images/flora/spring/Camellia 17a.jpg", "images/flora/spring/5K6A4514.jpg"];
+         var num = 0;
+         // right click
+         function next() {
+          var slider = 
+          document.getElementById('slider');
+          num++;
+          if(num >= images.length) {
+            num = 0;
+          }
+          slider.src = images[num];
+         }
+         
+         //left click
+         function prev(){
+          var slider =
+          document.getElementById('slider');
+           num--;
+           if(num < 0) {
+            num = images.length -1;
+           }
+           slider.src = images[num];
+         }
+          </script>       
       </body>
   </html>
+
+
+
