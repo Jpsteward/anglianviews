@@ -6,34 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/">
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-            <style type="text/css">
-
+        <!-- css link --> 
+        <link rel="stylesheet" type="text/css" href="css/global.css">  
+        <!-- check why this won't work in the external file --> 
+        <style type="text/css">
         .main{
-          height: 450px;
-          width: 600px;
-          margin-bottom: 50px;
-           }  
-
-          .tab {
-                height:100px;
-                width:100px; 
-                padding: 5px;               
-              }
-              .theme{
-                color:white;
-              }
-          body{
-            background-color:#222;
-          }
-        </style>         
+      height: 450px;
+      width: 600px;
+      margin-bottom: 50px;
+       }
+      </style>
        <body>
        <!--top order page button row 1 -->
           <div class="container">
              <div class="row col-md-12 text-right">
                <a href="contacts.html" class="btn btn-success bt-sm">Go To Order Page</a>
              </div>
-          </div> <br>  
-
+          </div>
            <!-- Top Nav elements not used on small screens row 2-->
            <div class="row col-md-12 text-right">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
@@ -61,15 +50,15 @@
            <!-- images -->
             <div  class="col-md-6 ">
 
-              <img id='slider' class = 'main img-rounded' src="images/flora/spring/5K6A4143.jpg"/>
+              <img id='slider' class ='main img-rounded' src="images/flora/spring/5K6A4143.jpg"/>
               
              </div>
              
              <!-- order button and scroll  row 4-->          
             <div class="row col-md-10 text-right">
-               <a class="btn btn-default glyphicon glyphicon-chevron-left"></a>
+               <a class="btn btn-default glyphicon glyphicon-chevron-left" onclick="prev()"></a>
                <a class="btn btn-success bt-sm col-xs-">Add to Order</a>        
-               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right"></a>
+               <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="next()"></a>
             </div>
 
 

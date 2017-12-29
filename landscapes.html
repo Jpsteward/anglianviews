@@ -6,29 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <base href="/">
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"> 
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-         
-        </script>
+        <!-- css link -->
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <!-- check why this won't work in the external file --> 
         <style type="text/css">
-
         .main{
-          height: 450px;
-          width: 600px;
-          margin-bottom: 50px;
-           }  
-
-          .tab {
-                height:100px;
-                width:100px;
-                padding: 5px;                
-              }
-          .theme {
-            color:white;
-          }    
-          body{
-            background-color:#222;
-          }
-        </style>    
+      height: 450px;
+      width: 600px;
+      margin-bottom: 50px;
+       }
+      </style>
        </head>
        <body>
        <!--top order page button row 1-->
@@ -37,7 +24,7 @@
             <a href="contacts.html" class="btn btn-success bt-sm">Go To Order Page</a>
            </div><br>
            <!-- Top Nav elements not used on small screens row 2-->
-           <div class="row col-md-12 tet-right">
+           <div class="row col-md-12 text-right">
              <nav class="nav navbar-nav navbar-right hidden-xs ">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="animals.html">Animals</a>
@@ -61,14 +48,14 @@
             <div class="col-md-1"></div>
            <!-- images -->
             <div class="row col-md-6">
-                <img id='slider' class = 'main img-rounded' src="images/flora/spring/5K6A4143.jpg"/>
-          </div>
+                <img id='slider' class = 'main img-rounded' src="images/landscapes/IMG_6241-2.jpg"/>
+            </div>
           
-             <!-- order button and scroll row 41-->          
+             <!-- order button and scroll row 4-->          
             <div class="row col-md-10 text-right">          
             <br> 
                <a class="btn btn-default glyphicon glyphicon-chevron-left" onclick="prev()"></a>
-               <a class="btn btn-success bt-sm col-xs-" onclick="">Add to Order</a>        
+               <a class="btn btn-success bt-sm col-xs-" onclick="order()">Add to Order</a>        
                <a class="btn btn-default glyphicon glyphicon-chevron-right" onclick="next()"></a>
             </div>
             <div class="col-md-2"></div>
@@ -91,7 +78,7 @@
         
          <script>
              // array
-         var images =["images/flora/spring/5K6A4143.jpg", "images/flora/spring/Camellia 17a.jpg", "images/flora/spring/5K6A4514.jpg"];
+         var images =["images/landscapes/IMG_6241-2.jpg", "images/landscapes/IMG_6217-2.jpg", "images/landscapes/Brancaster 25-5aa.jpg"];
          var num = 0;
          // right click
          function next() {
@@ -113,9 +100,9 @@
             num = images.length -1;
            }
            slider.src = images[num];
-         }
+         }        
 
-           
+
          </script>
          
       </body>

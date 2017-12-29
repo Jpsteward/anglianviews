@@ -6,28 +6,17 @@
         <link href="css/global.css" rel="stylesheet" type="text/css" >
 	      <meta name="viewport" content="width=device-width, initial-scale=1">        
         <base href="/">
-        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">  
-        <script src="jquery-3.2.1.js"></script> 
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- css link -->  
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <!-- check why this won't work in the external file -->
         <style type="text/css">
-
         .main{
-          height: 450px;
-          width: 600px;
-          margin-bottom: 50px;
-           }  
-
-          .tab {
-                height:100px;
-                width:100px; 
-                padding: 5px;               
-              }
-          .theme{
-            color:white;
-          }    
-          body{
-            background-color: #222;
-          }
-        </style>     
+      height: 450px;
+      width: 600px;
+      margin-bottom: 50px;
+       }
+      </style>      
        </head>
        <body>
        <!--top order page button row 1-->
@@ -75,8 +64,8 @@
 
 
              <!-- order button and scroll row 4-->          
-            <div class="row col-md-10 text-right" onclick="prev()">                          
-               <a class="btn btn-default glyphicon glyphicon-chevron-left"></a>
+            <div class="row col-md-10 text-right">                          
+               <a class="btn btn-default glyphicon glyphicon-chevron-left"  onclick="prev()"></a>
                <a class="btn btn-success bt-sm">Add to Order</a>       	
                <a class="btn btn-default col-lg- glyphicon glyphicon-chevron-right" onclick="next()"></a>                        
             </div>
@@ -98,7 +87,8 @@
            </div>
           </div> 
           
-          <script>
+          <!-- javascript link -->
+        <script>
             // array
          var images =["images/animals/Demoiselle 16-06b.jpg", "images/animals/Swan 17-06E.jpg", "images/animals/Gull 10-06-16e.jpg"];
          var num = 0;

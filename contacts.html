@@ -6,47 +6,46 @@
 	      <base href="/">        
 	      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">    
 	     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-       <style type="text/css">
-          .theme {
-            color: #fff;
-          }
-
-          body {
-            background-color: #222;
-          } 
-        </style>
+       <link rel="stylesheet" type="text/css" href="css/global.css"> 
+       <!-- check why this won't work in the external file --> 
+        <style type="text/css">
+        .main{
+      height: 450px;
+      width: 500px;
+      margin-bottom: 50px;
+       }
+       </style>      
        </head>
       <body>
           <div class="container">
-           
-           
-
-            <!--top order page button -->
-          <div class="container">
-           <div class="row">
-            <a href="contacts.html" class="btn btn-success bt-sm col-xs-offset-6 col-sm-offset-10 col-md-offset-11 col-lg-offset-10">Go To Order Page</a>
-           </div><br>
-           </div>
-
-
-            <!-- Top Nav elements not used on small screens -->
-           <div class="row">
-             <nav class="nav navbar-nav navbar-right hidden-xs hidden-sm hidden-md">
+        
+         
+            <!-- Top Nav elements not used on small screens Row 1 -->
+           <div class="row col-md-12 text-right">
+             <nav class="nav navbar-nav navbar-right hidden-xs">
                 <a class="navbar-brand" href="index.html">Home</a>
                 <a class="navbar-brand" href="animals.html">Animals</a>
                 <a class="navbar-brand" href="flora.html">Flora and Fauna</a>
-                <a class="navbar-brand" href="landscapes.html">Landscapes</a>
-                
+                <a class="navbar-brand" href="landscapes.html">Landscapes</a>                
               </nav>
-             </div>
-             <div class="row">
-              <div class="col-xs col-lg-offset-1">
-                 <H1 class="theme">Contact Details</H1>
-              </div>              
            </div>
 
+             <!-- row 2 --> 
+             <div class="row col-md-6">
+                <h1 class="theme">Your Pictures</h1>
+
+                <img id='slider' class = 'main img-rounded' src="images/landscapes/IMG_6241-2.jpg"/>
+             </div>           
+             <div class="row col-md-6">
+                <h1 class="theme">Contact Details</h1>                     
+            </div>
+            
+            <!-- row 3 -->
+            <div class="row col-md-6">
+              <h1></h1>
+            </div>
            <!-- Form -->
-             <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-md-5 col-lg-offset-7 col-lg-5">
+             <div class="row col-md-6">
               <div id="orderForm">
                <br>
                <form role="form" ng-submit='formSubmit()'>
@@ -104,6 +103,8 @@
                </form> 
                </div>     
              </div>
+
+
           <!-- small screen nav elements -->
             <div class="row">
              <div class="col-xs-offset-1 hidden-lg hidden-md hidden-sm">
